@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    font-family: 'Poppins';
+    /* font-family: 'Montserrat', sans-serif; */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header{
+    /* background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("./images/ed-r ojas-quvUXEIlE3U-unsplash.jpeg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("./images/tedtalkimage.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 87.5vh;
+
+    border-top: solid 2.5px #2596be;
+    border-bottom: solid 2.5px #2596be;
+    text-decoration-color: #2596be;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ion-icon{
+  color: blue;
+  padding: 0px;
+  margin: 0px;
+  /* color: white;
+  
+  background: linear-gradient(45deg, red, #2596be); */
+}
+
+.logo-title{
+    font-size: 21vh;
+    /* border: solid 2.5px white; */
+
+    padding: 2.5vh;
+    
+}
+
+.biggenate{
+  transform: scale(1.1);
+}
+
+nav{
+    font-family: 'Poppins';
+    background-color: black;
+    
+    margin: 0;
+    padding: 0;
+    
+    /* border-bottom: solid 2.5px #2596be; */
+    border-left: 5px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+li .icon{
+  justify-self:flex-start;
+}
+
+li{
+    padding: 20px 10px;
+    text-decoration: none;
+    transition: 100ms;
+
+    margin-left: 5px;
+    /* color: #243d6d; */
+}
+
+/* .logo-img-a{
+  /* margin: 0px 800px 0px 0px; top | right | bottom | left 
+  margin-right: 63vw;
+} */
+
+.logo-img-nav{
+  width: 50px;
+  height: 50px;
+
+  margin-top: 12.5px;
+}
+
+li:hover{
+    transition: 200ms;
+    transform: scale(1.05);
+}
+
+span{
+    background: linear-gradient(45deg, red, #2596be);
+    padding: 8px 15px;
+    /* border-radius: 25px; */
+
+    color: white;
+}
+
+
+.title-text-color{
+    /* background: -webkit-linear-gradient(100%, #eee, #333); */
+    color:white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+/* ABOVE MARKS ALL THE CSS CODE FOR THE HEADER/NAV SECTIONS OF THE Ignite Website */
+/* .primary-section-title{
+    
+} */
+
+
+/* BELOW SECTION DESCRIBES THE FRONT PAGE'S PRIMARY CONTENT SECTION */
+.primaryInfoGrid{
+  background-color: black;
+  width: 100%;
+  height: 200vh;
+
+  padding-top: 50px;
+  /* padding-right: 5px;
+  padding-left: 5px; */
+
+  /* border-top: solid 2.5px #3873a9; */
+  /* border-top: solid 2.5px #2596be; */
+  display: grid;
+  grid-template-areas:
+    "sectionTitle sectionTitle"
+    "grid1 grid2"
+    "ourStory ourStory"
+    "video video";
+
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 0.1fr 0.5fr 0.1fr 1fr 0.1fr; */
+  /* grid-template-rows: 25px 200px 25px 500px 25px; */
+  grid-template-rows: 0.05fr 0.25fr 0.05fr 0.25fr;
+
+  grid-row-gap: 25px;
+  /* grid-column: 1fr a 3fr b 1fr c;
+  grid-row: 1fr x 1fr y 1fr z; */
+}
+
+.sectionTitle{
+  grid-area: sectionTitle;
+  /* border-radius: 100px; */
+  padding: 5px;
+  padding-right: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-left: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background: rgba(146, 146, 146, 0.25); */
+  background: linear-gradient(45deg, red, #2596be);
+  box-shadow: 0 15px 35px rgba(37, 150, 190, 0.2);
+  backdrop-filter: blur(10px);
+
+  font-size: 5vh;
+  color: white;
+}
+
+.sectionQCard2{
+  grid-area: grid2;
+  /* background: white; */
+  margin-left: 50px;
+  /* background-image: linear-gradient(45deg, red, #2596be); */
+
+  /* background: rgba(37, 149, 190, 0.151); */
+
+  display: grid;
+
+  /* border-radius: 50px; */
+  margin-right: 50px;
+  margin-left: 5px;
+
+  color: white;
+
+  display: grid;
+  /* place-items: center; */
+  padding: 50px;
+  font-size: 30px;
+
+  
+  grid-template-areas:
+    "coolText"
+    "signUpButton";
+    grid-template-rows: 1fr 0.5fr; 
+    grid-template-columns: 1fr;
+}
+
+.sectionQCard2-btn{
+  grid-area: signUpButton;
+
+  background: linear-gradient(45deg, red, #2596be);
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 400 !important;
+  color: rgb(255, 255, 255);
+  padding: 23px 75px;
+  margin: auto;
+  text-align: center;
+  display: inline-block !important;
+  text-decoration: none;
+  border: 0px;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s 0s ease-in-out;
+}
+
+.sectionQCard2-btn:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+
+
+.sectionQCard1{
+  grid-area: grid1;
+  /* background: white; */
+  margin-left: 50px;
+  padding: 5px;
+  border: 2.5px solid transparent;
+  border-image: linear-gradient(45deg, red, #2596be);
+  /* border-radius: 25px; */
+  border-image-slice: 2;
+
+  display: grid;
+
+  grid-template-areas:
+    "titleQ"
+    "titleA";
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.sectionQCard1 h2{
+  
+  font-size: 40px;
+  
+  grid-area: titleQ;
+  padding-top: 25px;
+  display: grid;
+  justify-content: center;
+
+  text-decoration: underline;
+  text-decoration-color: #2596be;
+}
+
+.sectionQCard1 p{
+  font-size: 20px;
+  display: grid;
+  justify-content: center;
+  text-align:center;
+  
+  margin-top: -25px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 25px;
+
+  color: #fff;
+}
+
+.ourStory{
+  grid-area: ourStory;
+  /* border-radius: 100px; */
+  padding: 5px;
+  padding-right: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-left: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background: rgba(146, 146, 146, 0.25); */
+  background: linear-gradient(45deg, red, #2596be);
+  box-shadow: 0 15px 35px rgba(37, 150, 190, 0.2);
+  backdrop-filter: blur(10px);
+
+  font-size: 5vh;
+  color: white;
+}
+
+.ourStory-vid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: video;
+
+}
+
+.ourStory-vid iframe{
+  border: 2.5px solid transparent;
+  border-image: linear-gradient(45deg, red, #2596be);
+  border-image-slice: 2;
+
+  height: 110vh;
+  width: 92.5%;
+}
+
+/* .stats-bdiv{
+  grid-area: bannerInfo;
+  padding: 5px;
+  height: 200px;
+  display: grid;
+  grid-template-areas: 
+    "a b c";
+  place-items: center;
+
+  background: linear-gradient(45deg, red, #2596be);
+  box-shadow: 0 15px 35px rgba(37, 150, 190, 0.2);
+  backdrop-filter: blur(10px);
+
+  font-size: 5vh;
+  color: white;
+} */
+
+
+footer{
+  /* grid-area: bannerInfo; */
+  width: 100%;
+  /* height: 25px !important; */
+  background: linear-gradient(45deg, red, #2596be); 
+  color: white;
+  text-align: right;
+  margin-right: 5px;
+  
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
