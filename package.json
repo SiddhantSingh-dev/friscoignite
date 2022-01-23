@@ -1,0 +1,15 @@
+{
+  "name": "ignite",
+  "version": "1.0.0",
+  "description": "friso-ignite website v1",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://SiddhantSingh-dev.github.io/friscoignite",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
